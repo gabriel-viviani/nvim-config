@@ -14,6 +14,9 @@ vim.g.mapleader = " "
 --   visual_block_mode = "x",
 --   term_mode = "t",
 --   command_mode = "c",
+--
+keymap("n", "<leader>vs", ":vsplit<CR>", opts)
+keymap("n", "<leader>hs", ":split<CR>", opts)
 
 -- Normal --
 -- Better window navigation
