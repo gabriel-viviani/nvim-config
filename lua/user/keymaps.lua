@@ -26,10 +26,10 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- Resize with arrows
-keymap("n", "<C-Up>", ":resize -2<CR>", opts)
-keymap("n", "<C-Down>", ":resize +2<CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+keymap("n", "<leader><Up>", ":resize -2<CR>", opts)
+keymap("n", "<leader><Down>", ":resize +2<CR>", opts)
+keymap("n", "<leader><Left>", ":vertical resize -2<CR>", opts)
+keymap("n", "<leader><Right>", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
@@ -47,6 +47,7 @@ keymap("v", "p", '"_dP', opts)
 -- Insert --
 -- Press jk fast to enter
 --keymap("i", "jk", "<ESC>", opts)
+keymap("t", "<leader><ESC>", "<C-\\><C-n>", opts)
 
 -- Visual --
 -- Stay in indent mode
